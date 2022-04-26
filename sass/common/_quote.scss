@@ -1,0 +1,178 @@
+.quote {
+    position: relative;
+    padding: 3.75rem 0;
+    background: var(--second-color);
+    &__main-title {
+        text-align: center;
+        color: var(--light-text-color);
+        font-size: 5.8vw;
+        line-height: 3.4vw;
+        @include media(440px) {
+            text-align: left;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        @include media(570px) {
+            text-align: left;
+            font-size: 2.9vw;
+            line-height: 1.76vw;
+        }
+    }
+    &__intro {
+        text-align: center;
+        color: var(--light-text-color);
+        font-weight: 300;
+        font-size: 5vw;
+        line-height: 5.3vw;
+        @include media(440px) {
+            text-align: justify;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        @include media(570px) {
+            text-align: left;
+            font-size: 2vw;
+            line-height: 2.9vw;
+        }
+    }
+    &__contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 48px;
+
+        .inform {
+            display: flex;
+            flex-direction: column;
+
+            &__title {
+                font-weight: 900;
+                text-align: center;
+                color: var(--light-text-color);
+                font-size: 3.5vw;
+                line-height: 4vw;
+                @include media(570px) {
+                    font-size: 2vw;
+                    line-height: 2.9vw;
+                }
+                @include media(992px) {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+
+            &__intro {
+                font-weight: 400;
+                color: var(--light-text-color);
+                font-size: 4.17vw;
+                line-height: 5.20vw;
+                @include media(570px) {
+                    font-size: 1.3vw;
+                    line-height: 2vw;
+                }
+                @include media(992px) {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+
+            &__address {
+                text-decoration: none;
+                color: var(--light-text-color);
+                font-size: 4.17vw;
+                line-height: 5.20vw;
+                @include media(570px) {
+                    font-size: 1.3vw;
+                    line-height: 2vw;
+                }
+                @include media(992px) {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+                &::before {
+                    content: url('../img/contact/address.png');
+                    margin-right: 18px;
+                }
+                &:hover {
+                    color: #4b0055;
+                }
+            }
+            &__phone {
+                text-decoration: none;
+                color: var(--light-text-color);
+                font-size: 4.17vw;
+                line-height: 5.20vw;
+                @include media(570px) {
+                    font-size: 1.3vw;
+                    line-height: 2vw;
+                }
+                @include media(992px) {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+                &::before {
+                    content: url('../img/contact/phone.svg');
+                    margin-right: 18px;
+                }
+                &:hover {
+                    color: #4b0055;
+                }
+            }
+
+            &__email {
+                text-decoration: none;
+                color: var(--light-text-color);
+                font-size: 4.17vw;
+                line-height: 5.20vw;
+                @include media(570px) {
+                    font-size: 1.3vw;
+                    line-height: 2vw;
+                }
+                @include media(992px) {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+                &::before {
+                    content: url('../img/contact/email.svg');
+                    margin-right: 18px;
+                }
+                &:hover {
+                    color: #4b0055;
+                }
+            }
+            @include media(1020px) {
+                align-items: flex-start;
+            }
+        }
+
+        @include media(1020px) {
+        grid-template-columns: 60% auto;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+        input, textarea {
+            background: #ca4549;
+            border-style: inset;
+            border-radius: 5px;
+            border-width: 2px;
+            padding: 1px 2px;
+            height: 6.15vh;
+            text-indent: 15px;
+            caret-color: var(--input-color);
+            color: var(--input-color);
+            &::placeholder {
+                color: var(--input-color);
+            }
+        }
+        textarea {
+            padding-top: 10px;
+        }
+        .quote__form--describe {
+            height: 30.7vh;
+        }
+    }
+}

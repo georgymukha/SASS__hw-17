@@ -1,0 +1,30 @@
+.slider {
+    background: var(--second-color);
+    padding: 3.125rem 0;
+    &__arrows {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 3.9vw;
+        .container {
+            @include flex(center, center);
+    
+            @include media(768px) {
+                gap: 4rem;
+            }
+        }
+    }
+    
+    &__arrow {
+        cursor: pointer;
+    }
+}
+.slider__img {
+    max-width: 100%;
+    &:last-child {
+        display: none;
+        @include media(900px) {
+            display: block;
+        }
+    }
+}

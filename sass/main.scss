@@ -1,0 +1,17 @@
+@import 'config/functions';
+@import 'config/settings';
+
+@import '../node_modules/bourbon/core/bourbon';
+@import '../node_modules/normalize.scss/normalize';
+
+@import 'config/mixin';
+@import 'config/fonts';
+@import 'config/default';
+
+@import './common/header';
+@import './common/slider';
+@import './common/service';
+@import './common/portfolio';
+@import './common/about';
+@import './common/quote';
+@import './common/footer';

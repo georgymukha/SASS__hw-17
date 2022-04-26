@@ -1,0 +1,34 @@
+$main-color: #303441;
+$second-color: #eb5055;
+$third-color: #f2f2f2;
+$title-color: #666d89;
+$light-text-color: #f0d8d9;
+$text-color: #767e9e;
+$input-color: #f48c8f;
+$font: "lato";
+$width: 1100px;
+$gutter: 0.5rem;
+
+// css settings
+:root {
+	--main-color: #{$main-color};
+	--second-color: #{$second-color};
+	--third-color: #{$third-color};
+	--title-color: #{$title-color};
+	--light-text-color: #{$light-text-color};
+	--text-color: #{$text-color};
+	--input-color: #{$input-color};
+	--font: #{$font};
+	--width: #{$width};
+	--gutter: #{$gutter};
+	--light-color: #fff;
+}
+
+// default breakpoints for media mixins
+$phone: 480px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+// width for font-size mixin
+$max-width: 1280;

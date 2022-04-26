@@ -1,0 +1,73 @@
+.header {
+    background: var(--main-color);
+    padding: 2.1875rem;
+    color: var(--light-color);
+
+    a {
+        color: var(--light-color);
+        text-decoration: none;
+    }
+    &__container {
+        @include flex($main: space-between, $cross: center);
+    }
+}
+
+.logo {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &::after {
+        content: '*';
+        color: var(--second-color);
+    }
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba($color: $second-color, $alpha: .9);
+    @include flex(center, center, $dir: column);
+
+    transition: .4s;
+    transform: translateY(-100%) rotateX(-45deg);
+    &.is-active {
+        transform: translateY(0) rotateX(0);
+    }
+
+    @include media(768px) {
+        transform: none;
+        background: none;
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    &__link {
+        margin: 0.625rem 0;
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--second-color);
+        }
+
+        @include media(768px) {
+            margin: 0 10px;
+        }
+    }
+}
+$hamburger-layer-type: (collapse);
+$hamburger-layer-color: var(--light-color);
+$hamburger-padding-y: 0;
+$hamburger-padding-x: 0;
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
+
+.hamburger {
+    @include media(768px) {
+        display: none;
+    }
+}

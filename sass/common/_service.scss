@@ -1,0 +1,106 @@
+.service {
+    padding: 3.75rem 0;
+    background: var(--third-color);
+    &__main-title {
+        text-align: center;
+        color: var(--title-color);
+        font-size: 5.8vw;
+        line-height: 3.4vw;
+        @include media(440px) {
+            text-align: left;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        @include media(570px) {
+            text-align: left;
+            font-size: 2.9vw;
+            line-height: 1.76vw;
+        }
+        @include media(992px) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+    &__intro {
+        text-align: center;
+        color: var(--text-color);
+        font-weight: 300;
+        font-size: 5vw;
+        line-height: 5.3vw;
+        @include media(440px) {
+            text-align: justify;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        @include media(570px) {
+            text-align: left;
+            font-size: 2vw;
+            line-height: 2.9vw;
+        }
+        @include media(992px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 2rem;
+        @include media(570px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include media(992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &__item {
+        padding: 1rem;
+        text-align: center;
+        color: var(--text-color);
+        @include media(440px) {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 20px;
+            text-align: left;
+        }
+        @include media(570px) {
+            display: block;
+            text-align: center;
+        }
+        @include media(992px) {
+            display: grid;
+            text-align: left;
+        }
+    }
+    &__title {
+        font-size: 3.5vw;
+        line-height: 4vw;
+        margin-top: 0;
+        @include media(570px) {
+            margin-top: 1rem;
+            font-size: 2vw;
+            line-height: 2.9vw;
+        }
+        @include media(992px) {
+            margin-top: 0;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    &__desc {
+        font-weight: 400;
+        font-size: 4.17vw;
+        line-height: 5.20vw;
+        @include media(570px) {
+            font-size: 1.3vw;
+            line-height: 2vw;
+        }
+        @include media(992px) {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+}

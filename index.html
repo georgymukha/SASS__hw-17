@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Sass project</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<a href="#" class="logo">Singolo</a>
+			<nav class="nav">
+				<a href="#" class="nav__link">Home</a>
+				<a href="#" class="nav__link">Services</a>
+				<a href="#" class="nav__link">Portfolio</a>
+				<a href="#" class="nav__link">About</a>
+				<a href="#" class="nav__link">Contact</a>
+			</nav>
+			<button class="hamburger hamburger--collapse" type="button">
+				<span class="hamburger-box">
+				  <span class="hamburger-inner"></span>
+				</span>
+			  </button>
+
+		</div>
+	</header>
+
+	<section class="slider">
+		<div class="slider__arrows">
+			<div class="slider__arrow">
+				<img src="./img/left-arrow.svg" alt="" class="slider__arrow-icon">
+			</div>
+			<div class="container">
+				<img src="./img/iphone-v.png" alt="" class="slider__img">
+				<img src="./img/iphone-h.png" alt="" class="slider__img">
+			</div>
+			<div class="slider__arrow">
+				<img src="./img/right-arrow.svg" alt="" class="slider__arrow-icon">
+			</div>
+		</div>
+	</section>
+
+	<section class="service">
+		<div class="container">
+			<h2 class="service__main-title">Our services</h2>
+			<p class="service__intro">
+				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+			</p>
+
+			<ul class="service__list">
+				<li class="service__item">
+					<div class="service__icon-wrap">
+						<img src="./img/pen.svg" alt="" class="service__icon">
+					</div>
+					<div class="service__info">
+						<h3 class="service__title">Custom design</h3>
+						<p class="service__desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa beatae tempore, eos reprehenderit voluptates?
+						</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__icon-wrap">
+						<img src="./img/bulb.svg" alt="" class="service__icon">
+					</div>
+					<div class="service__info">
+						<h3 class="service__title">Inovative Ideas</h3>
+						<p class="service__desc">
+							Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+						</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__icon-wrap">
+						<img src="./img/heart.svg" alt="" class="service__icon">
+					</div>
+					<div class="service__info">
+						<h3 class="service__title">Love Is The Answer</h3>
+						<p class="service__desc">
+							Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+						</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__icon-wrap">
+						<img src="./img/phone.svg" alt="" class="service__icon">
+					</div>
+					<div class="service__info">
+						<h3 class="service__title">Responsive Layout</h3>
+						<p class="service__desc">
+							Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
+						</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__icon-wrap">
+						<img src="./img/bubble.svg" alt="" class="service__icon">
+					</div>
+					<div class="service__info">
+						<h3 class="service__title">24 / 7 Support</h3>
+						<p class="service__desc">
+							Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
+						</p>
+					</div>
+				</li>
+				<li class="service__item">
+					<div class="service__icon-wrap">
+						<img src="./img/star.svg" alt="" class="service__icon">
+					</div>
+					<div class="service__info">
+						<h3 class="service__title">Feel Like A Star</h3>
+						<p class="service__desc">
+							Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="portfolio__main-title">
+				Portfolio
+			</h2>
+			<p class="portfolio__intro">
+				Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+			</p>
+			<div class="portfolio__sort">
+				<div class="portfolio__sort-button is-active"><span class="portfolio__sort-text">All</span></div>
+				<div class="portfolio__sort-button"><span class="portfolio__sort-text">Web Design</span></div>
+				<div class="portfolio__sort-button"><span class="portfolio__sort-text">Graphic Design</span></div>
+				<div class="portfolio__sort-button"><span class="portfolio__sort-text">Artwork</span></div>
+			</div>
+			<div class="gallery">
+				<div class="gallery__item" id="img-1"></div>
+				<div class="gallery__item" id="img-2"></div>
+				<div class="gallery__item" id="img-3"></div>
+				<div class="gallery__item" id="img-4"></div>
+				<div class="gallery__item" id="img-5"></div>
+				<div class="gallery__item" id="img-6"></div>
+				<div class="gallery__item" id="img-7"></div>
+				<div class="gallery__item" id="img-8"></div>
+				<div class="gallery__item" id="img-9"></div>
+				<div class="gallery__item" id="img-10"></div>
+				<div class="gallery__item" id="img-11"></div>
+				<div class="gallery__item" id="img-12"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<h2 class="about__main-title">
+				About Us
+			</h2>
+			<p class="about__intro">
+				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+			</p>
+			<div class="designers">
+				<div class="designers__designer">
+					<div class="designers__photos">
+						<img src="./img/designers/1jensen.jpg" alt="" class="disigners__photo">
+					</div>
+					<div class="designers__name">Adam Jensen</div>
+					<div class="designers__desc">
+						Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+					</div>
+					<div class="designers__links">
+						<img src="./img/link-icons/1Facebook.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/2Google.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/3Twitter.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/4LinkedIn.png" alt="" class="designers__icon">
+					</div>
+				</div>
+				<div class="designers__designer">
+					<div class="designers__photos">
+						<img src="./img/designers/2miles.jpg" alt="" class="disigners__photo">
+					</div>
+					<div class="designers__name">Desmond Miles</div>
+					<div class="designers__desc">
+						Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+					</div>
+					<div class="designers__links">
+						<img src="./img/link-icons/1Facebook.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/2Google.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/3Twitter.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/4LinkedIn.png" alt="" class="designers__icon">
+					</div>
+				</div>
+				<div class="designers__designer">
+					<div class="designers__photos">
+						<img src="./img/designers/3visari.jpg" alt="" class="disigners__photo">
+					</div>
+					<div class="designers__name">Scolara Visari</div>
+					<div class="designers__desc">
+						Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+					</div>
+					<div class="designers__links">
+						<img src="./img/link-icons/1Facebook.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/2Google.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/3Twitter.png" alt="" class="designers__icon">
+						<img src="./img/link-icons/4LinkedIn.png" alt="" class="designers__icon">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="quote">
+		<div class="container">
+			<h2 class="quote__main-title">
+				Get a Quote
+			</h2>
+			<p class="quote__intro">
+				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+			</p>
+			<div class="quote__contact">
+				<div class="quote__input">
+					<form class="quote__form">
+						<input class="quote__form--name" type="text" placeholder="Name (Required)">
+						<input class="quote__form--email" type="email" placeholder="Email (Required)">
+						<input class="quote__form--subject" type="text" placeholder="Subject">
+						<textarea name="" class="quote__form--describe" cols="30" rows="10" placeholder="Describe your project in detail"></textarea>
+					</form>
+				</div>
+				<div class="inform">
+					<h2 class="inform__title">Contact Information</h2>
+					<p class="inform__intro">
+						Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
+					</p>
+					<a href="https://yandex.ru/maps/-/CCUFa0f2~A" class="inform__address">
+						Elm St. 14/05 Lost City
+					</a>
+					<a href="tel:035283318635" class="inform__phone">
+						03528 331 86 35
+					</a>
+					<a href="mailto:info@singolo.com" class="inform__email">
+						info@singolo.com
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__flex">
+				<span class="footer__copyright">© Copyright 2013 · by PSDchat.com</span>
+				<div class="footer__links">
+					<a href="#" class="footer__link">
+						<img src="./img/link-icons/1Facebook.png" alt="" class="footer__icon">
+					</a>
+					<a href="#" class="footer__link">
+						<img src="./img/link-icons/2Google.png" alt="" class="footer__icon">
+					</a>
+					<a href="#" class="footer__link">
+						<img src="./img/link-icons/3Twitter.png" alt="" class="footer__icon">
+					</a>
+					<a href="#" class="footer__link">
+						<img src="./img/link-icons/4LinkedIn.png" alt="" class="footer__icon">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		var sort = document.querySelectorAll('.portfolio__sort-button');
+		function activeSort() {
+			sort.forEach((item) =>
+			item.classList.remove('is-active'));
+			this.classList.add('is-active');
+		}
+		sort.forEach((item) =>
+		item.addEventListener('click',activeSort))
+	</script>
+	<script>
+		// Look for .hamburger
+		var hamburger = document.querySelector(".hamburger");
+		var nav = document.querySelector(".nav");
+
+		// On click
+		hamburger.addEventListener("click", function() {
+		  // Toggle class "is-active"
+		  hamburger.classList.toggle("is-active");
+		  nav.classList.toggle("is-active");
+		  // Do something else, like open/close menu
+		});
+	  </script>
+</body>
+</html>
